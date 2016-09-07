@@ -1,4 +1,4 @@
-package seedu.addressbook.data.person;
+	package seedu.addressbook.data.person;
 
 import seedu.addressbook.data.tag.UniqueTagList;
 

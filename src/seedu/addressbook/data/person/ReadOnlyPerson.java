@@ -1,4 +1,4 @@
-package seedu.addressbook.data.person;
+	package seedu.addressbook.data.person;
 
 import seedu.addressbook.data.tag.Tag;
 import seedu.addressbook.data.tag.UniqueTagList;
@@ -59,6 +59,13 @@ public interface ReadOnlyPerson {
             builder.append(tag);
         }
         return builder.toString();
+    }
+    
+    /**
+     * Returns a concatenated version of the printable strings of each object.
+     */
+    default String getPrintableString(Printable phone, Printable email, Printable address){
+    	return phone.getPrintableString() + " " + email.getPrintableString() + " " + address.getPrintableString();
     }
 
     /**
